@@ -1,0 +1,87 @@
+# Directories #
+[Bb]in/
+[Oo]bj/
+[Ll]ogs/
+[Pp]roperties/
+[Tt]est[Rr]esults/
+
+# Files #
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ReSharper #
+_ReSharper*/
+*.ReSharper
+
+# TeamCity #
+_TeamCity*
+
+# DotCover #
+*.dotCover
+
+# NCrunch #
+_NCrunch_*
+.*crunch*.local.xml
+
+# MightyMoose #
+*.mm.*
+AutoTest.Net/
+
+# Visual Studio Code #
+.vscode/
+
+# Visual Studio Mac #
+.vs/
+
+# Rider #
+.idea/
+
+# User-specific files #
+*.suo
+*.user
+*.userprefs
+*.usertasks
+*.cache
+*.vshost.*
+*.pidb
+*.log
+*.vspscc
+*.vssscc
+*.bak
+*.orig
+
+# NuGet #
+packages/
+*.nupkg
+*.snupkg
+*.nuget.targets
+*.nuget.props
+project.lock.json
+nuget.exe
+
+# Build results #
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]ogs/
+[Tt]est[Rr]esults/
+
+# Others #
+*.mdf
+*.ldf
+*.ndf
+*.bak
+*.trx
+*.vsmd
+*.md
+*.ico
+*.pdb
+*.opendb
+*.dbmdl
