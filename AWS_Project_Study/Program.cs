@@ -7,10 +7,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
-
 var s3BucketConfigs = builder.Configuration.GetSection("s3BucketConfigs").Get<S3BucketConfigs>();
 var s3Configs = builder.Configuration.GetSection("s3Configs").Get<S3Configs>();
+
+if (s3BucketConfigs is null || s3Configs is null)
+    throw new ArgumentNullException($"{nameof(s3BucketConfigs)} or {nameof(s3Configs)} was not found.");
 
 builder.Services.AddSingleton(s3BucketConfigs);
 builder.Services.AddSingleton(s3Configs);
