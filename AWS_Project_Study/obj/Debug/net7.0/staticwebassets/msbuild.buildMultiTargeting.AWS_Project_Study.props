@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\AWS_Project_Study.props" />
-</Project>
